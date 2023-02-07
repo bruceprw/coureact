@@ -1,5 +1,21 @@
 import logo from './logo.svg';
 import './App.css';
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
+
+const firebaseConfig = {
+  apiKey: "AIzaSyCC7SDYgABduhAdowt2USdXqgczGY1DvaE",
+  authDomain: "coureact.firebaseapp.com",
+  projectId: "coureact",
+  storageBucket: "coureact.appspot.com",
+  messagingSenderId: "188512414625",
+  appId: "1:188512414625:web:fb8d7e245496bf29c6f9e0",
+  measurementId: "G-19YF29VBJ5"
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);
 
 function App() {
   return (
